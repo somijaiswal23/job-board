@@ -1,0 +1,50 @@
+$color_Black: black;
+$color_White: white;
+$background_color_grey: #f1f1f1;
+$background_color_lightgrey: #ddd;
+$background_color_2: #555;
+$background_color_dodgerblue: dodgerblue;
+.hero-image {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $color_White;
+  h1 {
+    font-size: 50px;
+    strong {
+      color: $color_White;
+    }
+  }
+  p {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: $color_White;
+    background-color: $background_color_lightgrey;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background-color: $background_color_2;
+      color: $color_Black;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero-text {
+    width: 100%;
+  }
+}

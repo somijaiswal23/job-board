@@ -1,0 +1,49 @@
+$color_Black: black;
+$color_White: white;
+$background_color_grey: #f1f1f1;
+$background_color_lightgrey: #ddd;
+$background_color_dodgerblue: dodgerblue;
+
+.header {
+  overflow: hidden;
+  background-color: $background_color_grey;
+  padding: 20px 10px;
+  a {
+    float: left;
+    color: $color_Black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    &:hover {
+      background-color: $background_color_lightgrey;
+      color: $color_Black;
+    }
+  }
+  a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: $background_color_dodgerblue;
+  }
+  a.active {
+    background-color: $background_color_dodgerblue;
+    color: $color_White;
+  }
+}
+.header-right {
+  float: right;
+}
+@media screen and (max-width: 500px) {
+  .header {
+    a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  .header-right {
+    float: none;
+  }
+}
